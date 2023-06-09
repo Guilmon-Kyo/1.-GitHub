@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Propuesta extends Model
 {
     use HasFactory, SoftDeletes;
-    
     protected $table = 'propuestas';
 
     public function estadoPropuesta()

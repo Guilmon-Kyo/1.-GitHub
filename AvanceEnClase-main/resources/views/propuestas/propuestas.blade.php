@@ -87,7 +87,7 @@
                       <div class="carousel-caption d-none d-md-block">
                         <h5>Zona Retroalimentación</h5>
                         <p>Aqui podras ver el comentario del profesor sobre el proyecto.</p>
-                         <a href="retroalimentacion.html"><button class="btn btn-warning">Ir a Retroalimentación</button></a>
+                         <a href="{{route('retroalimentacion.retroalimentacion')}}"><button class="btn btn-warning">Ir a Retroalimentación</button></a>
                       </div>
                     </div>
                     <div class="carousel-item">
