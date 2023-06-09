@@ -42,10 +42,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="InicioPagina.html">Inicio</a>
+                <a class="nav-link @if(Route::current()->getName()=='Home.index') active @endif" href="{{route('Home.index')}}" aria-current="page">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ProyectoAlumnosNew.html">Propuestas</a>
+                <a class="nav-link @if(Route::current()->getName()=='propuestas.propuestas') active @endif" href="{{route('propuestas.propuestas')}}">Propuestas</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-bg-danger rounded" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,7 +53,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="TablaProfesor.html">Tabla de profesores</a></li>
-                  <li><a class="dropdown-item" href="estadoprouestas.html">Estado de propuestas</a></li>
+                  <li><a class="dropdown-item nav-link @if(Route::current()->getName()=='jugadores.index') active @endif" href="{{route('estadopropuestas.estadopro')}}">Estado de propuestas</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="https://usm.cl/">Pagina Oficial Usm</a></li>
                 </ul>

@@ -20,4 +20,5 @@ class EquipoController extends Controller
         $propuesta-> save();
         return redirect()->route('propuestas.propuestas');
     }
+
 }

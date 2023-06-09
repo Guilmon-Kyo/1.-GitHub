@@ -44,9 +44,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                  @foreach ($propuestas as $propuesta)
+                  @foreach ($propuestas as $num=>$propuesta)
                     <tr>
-                        <td class="text-center">{{$propuesta->id}}</td>
+                        <td class="text-center">{{$num+1}}</td>
                         <td class="text-center">{{$propuesta->nombre}}</td>
                         <td class="text-center">{{$propuesta->descripcion}}</td>
                         {{-- BOTONES PARA EDITAR: "PENDIENTE" --}}
@@ -71,7 +71,7 @@
                       <div class="carousel-caption d-none d-md-block">
                         <h5>Propuestas</h5>
                         <p style="color: red;" class="bg-warning">Una vez enviada la propuesta no se podrán hacer cambios de esta misma. Se espera una explicación breve del tema a tratar.</p>
-                         <a href="ProyectoAlumnosNew.html"><button class="btn btn-warning">Ir a propuestas</button></a>
+                         <a href="{{route('propuestas.propuestas')}}"><button class="btn btn-warning">Ir a propuestas</button></a>
                       </div>
                     </div>
                     <div class="carousel-item">
@@ -79,7 +79,7 @@
                       <div class="carousel-caption d-none d-md-block">
                         <h5>Inicio</h5>
                         <p>Te damos la bienvenida y te explicamos las zonas de la pagina.</p>
-                         <a href="InicioPagina.html"><button class="btn btn-warning">Ir a Inicio</button></a>
+                         <a href="{{route(Home.index)}}"><button class="btn btn-warning">Ir a Inicio</button></a>
                       </div>
                     </div>
                     <div class="carousel-item">
