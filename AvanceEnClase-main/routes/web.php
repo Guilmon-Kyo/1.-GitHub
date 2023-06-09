@@ -25,4 +25,10 @@ Route::get('/propuestas', [PropuestasController::class, 'propuestas'])->name('pr
 Route::post('/propuestas',[PropuestasController::class,'store'])->name('propuestas.store');
 
 Route::get('/estadopropuestas',[EstadoProController::class,'estadopro'])->name('estadopropuestas.estadopro');
-Route::post('/estadopropuestas',[PropuestasController::class,'store'])->name('estadopropuestas.store');
+Route::post('/estadopropuestas',[EstadoProController::class,'store'])->name('estadopropuestas.store');
+
+Route::get('/tablaprofe', [TablaProfeController::class, 'profesores'])->name('tablaprofe.tablaprofesor');
+Route::post('/tablaprofe', [TablaProfeController::class, 'store'])->name('tablaprofe.store');
+
+Route::get('/retroalimentacion', [RetroalimentacionController::class, 'retroalimentacion'])->name('retroalimentacion.retroalimentacion');
+Route::post('/retroalimentacion', [retroalimentacionController::class, 'store'])->name('retroalimentacion.store');

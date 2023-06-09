@@ -52,14 +52,14 @@
                   Zona Profesores
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="TablaProfesor.html">Tabla de profesores</a></li>
+                  <li><a class="dropdown-item " href="{{route('tablaprofe.tablaprofesor')}}">Tabla de profesores</a></li>
                   <li><a class="dropdown-item nav-link @if(Route::current()->getName()=='jugadores.index') active @endif" href="{{route('estadopropuestas.estadopro')}}">Estado de propuestas</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="https://usm.cl/">Pagina Oficial Usm</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="retroalimentacion.html">Zona Retroalimentación</a>
+                <a class="nav-link @if(Route::current()->getName()=='retroalimentacion.retroalimentacion') active @endif" href="{{route('retroalimentacion.retroalimentacion')}}" href="retroalimentacion.html">Zona Retroalimentación</a>
               </li>
             </ul>
             <form class="d-flex" role="search">

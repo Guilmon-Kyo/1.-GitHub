@@ -1,10 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Models\Propuesta;
-use App\Http\Controllers\PropuestasController;
 
 
 class PropuestasController extends Controller
@@ -14,7 +12,6 @@ class PropuestasController extends Controller
         $propuestas = Propuesta::all();
         return view('propuestas.propuestas', compact('propuestas'));
     }
-
     public function store(Request $request)
     {
         $propuesta = new Propuesta();
