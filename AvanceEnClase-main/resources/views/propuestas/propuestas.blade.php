@@ -79,7 +79,7 @@
                       <div class="carousel-caption d-none d-md-block">
                         <h5>Inicio</h5>
                         <p>Te damos la bienvenida y te explicamos las zonas de la pagina.</p>
-                         <a href="{{route(Home.index)}}"><button class="btn btn-warning">Ir a Inicio</button></a>
+                         <a href="{{route('home.index')}}"><button class="btn btn-warning">Ir a Inicio</button></a>
                       </div>
                     </div>
                     <div class="carousel-item">
