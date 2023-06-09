@@ -55,7 +55,7 @@
                                         <input type="password" id="password" class="form-control">
                                     </div>
                                     <div class="mb-4 text-end">
-                                        <a href="{{route('home.login')}}" class="btn btn-success">Iniciar Sesión</a>
+                                        <a href="{{route('home.index')}}" class="btn btn-success">Iniciar Sesión</a>
                                         <a  href="loginProfesor.html" class="btn btn-danger">Cambiar a Profesor</a>
                                     </div>
                                 </form>

@@ -28,7 +28,7 @@
            </div>
         </div>  
         <div class="col-1">
-         <a href="loginAlumno.html"><button  class="btn-danger">Cerrar Sesion</button> </a>
+         <a href="{{route('home.login')}}"><button  class="btn-danger">Cerrar Sesion</button> </a>
         </div>
     </div>
 
@@ -42,10 +42,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link @if(Route::current()->getName()=='Home.index') active @endif" href="{{route('Home.index')}}" aria-current="page">Inicio</a>
+                <a class="nav-link @if(Route::current()->getName()=='home.index') active @endif" href="{{route('home.index')}}" aria-current="page">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link @if(Route::current()->getName()=='propuestas.propuestas') active @endif" href="{{route('propuestas.propuestas')}}">Propuestas</a>
+                <a class="nav-link @if(Route::current()->getName()=='propuestas.propuestas') active @endif" href="{{route('propuestas.propuestas')}}" aria-current="page">Propuestas</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-bg-danger rounded" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

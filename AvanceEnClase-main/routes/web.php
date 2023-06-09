@@ -21,7 +21,7 @@ use App\Http\Controllers\PropuestasController;
 Route::get('/',[HomeController::class,'index'])->name('home.index');
 Route::get('/login',[HomeController::class,'login'])->name('home.login');
 
-Route::get('/propuestas',[PropuestasController::class,'propuestas'])->name('propuestas.propuestas');
+Route::get('/propuestas', [PropuestasController::class, 'propuestas'])->name('propuestas.propuestas');
 Route::post('/propuestas',[PropuestasController::class,'store'])->name('propuestas.store');
 
 Route::get('/estadopropuestas',[EstadoProController::class,'estadopro'])->name('estadopropuestas.estadopro');

@@ -4,21 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Propuesta;
+use App\Http\Controllers\PropuestasController;
 
-class EquipoController extends Controller
+
+class PropuestasController extends Controller
 {
-    public function propuestas(){
+    public function propuestas()
+    {
         $propuestas = Propuesta::all();
-        return view('propuestas.propuestas',compact('propuestas'));
+        return view('propuestas.propuestas', compact('propuestas'));
     }
 
-    public function store(Request $request){
-        //dd($request->entrenador);
-        $propuesta = new Equipo();
+    public function store(Request $request)
+    {
+        $propuesta = new Propuesta();
         $propuesta->nombre = $request->nombre;
         $propuesta->descripcion = $request->descripcion;
-        $propuesta-> save();
+        $propuesta->save();
+
         return redirect()->route('propuestas.propuestas');
     }
-
 }
